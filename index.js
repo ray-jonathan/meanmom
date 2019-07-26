@@ -58,6 +58,7 @@ app.get('/drinks', (req, res)=>{
     }
    ]
 })
+})
 app.get('/customers', (req, res)=>{
   res.json({results:[
     {
@@ -79,6 +80,7 @@ app.get('/customers', (req, res)=>{
       "twitter": "@mousendahouse"
     }
   ]
+})
 })
 app.get('/orders', (req, res)=>{
   res.json({results:[
