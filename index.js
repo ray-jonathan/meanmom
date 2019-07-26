@@ -4,6 +4,9 @@ const axios = require('axios');
 app.use(express.json()); // Required for passing JSON to `req.body`
 app.use(express.urlencoded({extended: true}));
 const port = 7431;
+var cors = require('cors')
+app.use(cors())
+
 
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
