@@ -60,7 +60,7 @@ app.get("/buses", async (req, res) => {
 });
 
 app.get("/inspiration", async (req, res) => {
-  const category = req.query;
+  const { category } = req.query;
   let { data } = await axios.get(`http://yerkee.com/api/fortune/${category}`);
 
   if (getRandomIntInclusive(0, 10) === 1 || !data) {
