@@ -19,6 +19,7 @@ app.get("/dranks/:alcool", async (req, res) => {
     `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${alcool}`
   );
   if (getRandomIntInclusive(0, 10) === 1 || !data) {
+    res.status(500);
     data = {
       strDrink: "THIS IS TRASH",
       strDrinkThumb:
@@ -27,7 +28,6 @@ app.get("/dranks/:alcool", async (req, res) => {
     };
   } else {
     data = data.drinks[getRandomIntInclusive(0, 20)];
-    res.status(500);
   }
   res.json(data);
 });
