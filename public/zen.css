@@ -27,6 +27,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+i{
+    display: block;
+}
 .icon-add:before {
     content: "\61";
 }
