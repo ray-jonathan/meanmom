@@ -28,7 +28,7 @@
     -moz-osx-font-smoothing: grayscale;
 }
 i{
-    display: block;
+    padding-right: 10px;
 }
 .icon-add:before {
     content: "\61";
