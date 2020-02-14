@@ -7,6 +7,8 @@ const port = 7431;
 var cors = require("cors");
 app.use(cors());
 
+app.use(express.static('public'));
+
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
